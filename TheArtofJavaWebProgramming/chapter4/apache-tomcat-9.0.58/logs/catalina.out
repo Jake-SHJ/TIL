@@ -1,0 +1,132 @@
+21-Jan-2022 22:29:59.288 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.58
+21-Jan-2022 22:29:59.293 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Jan 15 2022 14:37:38 UTC
+21-Jan-2022 22:29:59.293 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.58.0
+21-Jan-2022 22:29:59.293 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+21-Jan-2022 22:29:59.293 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.16
+21-Jan-2022 22:29:59.293 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+21-Jan-2022 22:29:59.293 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+21-Jan-2022 22:29:59.293 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          1.8.0_282-b08
+21-Jan-2022 22:29:59.293 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          AdoptOpenJDK
+21-Jan-2022 22:29:59.293 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58
+21-Jan-2022 22:29:59.293 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58
+21-Jan-2022 22:29:59.298 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/conf/logging.properties
+21-Jan-2022 22:29:59.298 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+21-Jan-2022 22:29:59.298 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+21-Jan-2022 22:29:59.298 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+21-Jan-2022 22:29:59.298 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+21-Jan-2022 22:29:59.299 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+21-Jan-2022 22:29:59.299 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58
+21-Jan-2022 22:29:59.299 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58
+21-Jan-2022 22:29:59.299 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/temp
+21-Jan-2022 22:29:59.300 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/shj/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+21-Jan-2022 22:29:59.588 정보 [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+21-Jan-2022 22:29:59.612 정보 [main] org.apache.catalina.startup.Catalina.load [494] 밀리초 내에 서버가 초기화되었습니다.
+21-Jan-2022 22:29:59.635 정보 [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+21-Jan-2022 22:29:59.636 정보 [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.58]
+21-Jan-2022 22:29:59.644 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/docs]을(를) 배치합니다.
+21-Jan-2022 22:29:59.839 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/docs]에 대한 배치가 [194] 밀리초에 완료되었습니다.
+21-Jan-2022 22:29:59.840 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/manager]을(를) 배치합니다.
+21-Jan-2022 22:29:59.864 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/manager]에 대한 배치가 [24] 밀리초에 완료되었습니다.
+21-Jan-2022 22:29:59.864 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/examples]을(를) 배치합니다.
+21-Jan-2022 22:30:00.047 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/examples]에 대한 배치가 [183] 밀리초에 완료되었습니다.
+21-Jan-2022 22:30:00.047 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/webShop]을(를) 배치합니다.
+21-Jan-2022 22:30:00.064 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/webShop]에 대한 배치가 [17] 밀리초에 완료되었습니다.
+21-Jan-2022 22:30:00.064 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/ROOT]을(를) 배치합니다.
+21-Jan-2022 22:30:00.075 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/ROOT]에 대한 배치가 [11] 밀리초에 완료되었습니다.
+21-Jan-2022 22:30:00.075 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/host-manager]을(를) 배치합니다.
+21-Jan-2022 22:30:00.087 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/host-manager]에 대한 배치가 [12] 밀리초에 완료되었습니다.
+21-Jan-2022 22:30:00.089 정보 [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+21-Jan-2022 22:30:00.099 정보 [main] org.apache.catalina.startup.Catalina.start 서버가 [486] 밀리초 내에 시작되었습니다.
+21-Jan-2022 22:31:10.117 정보 [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+21-Jan-2022 22:31:10.117 정보 [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+21-Jan-2022 22:31:10.121 정보 [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+21-Jan-2022 22:31:10.140 정보 [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+21-Jan-2022 22:31:10.143 정보 [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+21-Jan-2022 22:43:49.583 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.58
+21-Jan-2022 22:43:49.585 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Jan 15 2022 14:37:38 UTC
+21-Jan-2022 22:43:49.585 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.58.0
+21-Jan-2022 22:43:49.585 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+21-Jan-2022 22:43:49.585 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.16
+21-Jan-2022 22:43:49.585 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+21-Jan-2022 22:43:49.585 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+21-Jan-2022 22:43:49.585 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          1.8.0_282-b08
+21-Jan-2022 22:43:49.585 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          AdoptOpenJDK
+21-Jan-2022 22:43:49.585 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58
+21-Jan-2022 22:43:49.585 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58
+21-Jan-2022 22:43:49.587 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/conf/logging.properties
+21-Jan-2022 22:43:49.587 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+21-Jan-2022 22:43:49.587 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+21-Jan-2022 22:43:49.587 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+21-Jan-2022 22:43:49.588 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+21-Jan-2022 22:43:49.588 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+21-Jan-2022 22:43:49.588 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58
+21-Jan-2022 22:43:49.588 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58
+21-Jan-2022 22:43:49.588 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/temp
+21-Jan-2022 22:43:49.589 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/shj/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+21-Jan-2022 22:43:49.775 정보 [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+21-Jan-2022 22:43:49.791 정보 [main] org.apache.catalina.startup.Catalina.load [340] 밀리초 내에 서버가 초기화되었습니다.
+21-Jan-2022 22:43:49.807 정보 [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+21-Jan-2022 22:43:49.807 정보 [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.58]
+21-Jan-2022 22:43:49.952 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/docs]을(를) 배치합니다.
+21-Jan-2022 22:43:49.964 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/docs]에 대한 배치가 [12] 밀리초에 완료되었습니다.
+21-Jan-2022 22:43:49.964 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/manager]을(를) 배치합니다.
+21-Jan-2022 22:43:49.985 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/manager]에 대한 배치가 [21] 밀리초에 완료되었습니다.
+21-Jan-2022 22:43:49.985 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/examples]을(를) 배치합니다.
+21-Jan-2022 22:43:50.151 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/examples]에 대한 배치가 [166] 밀리초에 완료되었습니다.
+21-Jan-2022 22:43:50.151 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/ROOT]을(를) 배치합니다.
+21-Jan-2022 22:43:50.160 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/ROOT]에 대한 배치가 [9] 밀리초에 완료되었습니다.
+21-Jan-2022 22:43:50.160 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/host-manager]을(를) 배치합니다.
+21-Jan-2022 22:43:50.172 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/host-manager]에 대한 배치가 [12] 밀리초에 완료되었습니다.
+21-Jan-2022 22:43:50.174 정보 [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+21-Jan-2022 22:43:50.181 정보 [main] org.apache.catalina.startup.Catalina.start 서버가 [390] 밀리초 내에 시작되었습니다.
+21-Jan-2022 22:44:40.196 정보 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/webShop]을(를) 배치합니다.
+21-Jan-2022 22:44:40.208 정보 [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/webShop]에 대한 배치가 [11] 밀리초에 완료되었습니다.
+21-Jan-2022 22:45:39.171 정보 [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+21-Jan-2022 22:45:39.172 정보 [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+21-Jan-2022 22:45:39.175 정보 [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+21-Jan-2022 22:45:39.193 정보 [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+21-Jan-2022 22:45:39.198 정보 [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
+21-Jan-2022 22:48:53.492 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 서버 버전 이름:    Apache Tomcat/9.0.58
+21-Jan-2022 22:48:53.494 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 빌드 시각:  Jan 15 2022 14:37:38 UTC
+21-Jan-2022 22:48:53.494 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log Server 버전 번호:  9.0.58.0
+21-Jan-2022 22:48:53.494 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 이름:     Mac OS X
+21-Jan-2022 22:48:53.494 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 운영체제 버전:     10.16
+21-Jan-2022 22:48:53.494 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 아키텍처:          x86_64
+21-Jan-2022 22:48:53.494 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 자바 홈:           /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre
+21-Jan-2022 22:48:53.495 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 버전:          1.8.0_282-b08
+21-Jan-2022 22:48:53.495 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM 벤더:          AdoptOpenJDK
+21-Jan-2022 22:48:53.495 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     /Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58
+21-Jan-2022 22:48:53.495 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     /Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58
+21-Jan-2022 22:48:53.497 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.config.file=/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/conf/logging.properties
+21-Jan-2022 22:48:53.497 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+21-Jan-2022 22:48:53.497 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djdk.tls.ephemeralDHKeySize=2048
+21-Jan-2022 22:48:53.497 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+21-Jan-2022 22:48:53.497 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+21-Jan-2022 22:48:53.497 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dignore.endorsed.dirs=
+21-Jan-2022 22:48:53.497 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.base=/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58
+21-Jan-2022 22:48:53.497 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Dcatalina.home=/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58
+21-Jan-2022 22:48:53.497 정보 [main] org.apache.catalina.startup.VersionLoggerListener.log 명령 행 아규먼트:  -Djava.io.tmpdir=/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/temp
+21-Jan-2022 22:48:53.499 정보 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 프로덕션 환경들에서 최적의 성능을 제공하는, APR 기반 Apache Tomcat Native 라이브러리가, 다음 java.library.path에서 발견되지 않습니다: [/Users/shj/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+21-Jan-2022 22:48:53.685 정보 [main] org.apache.coyote.AbstractProtocol.init 프로토콜 핸들러 ["http-nio-8080"]을(를) 초기화합니다.
+21-Jan-2022 22:48:53.700 정보 [main] org.apache.catalina.startup.Catalina.load [342] 밀리초 내에 서버가 초기화되었습니다.
+21-Jan-2022 22:48:53.715 정보 [main] org.apache.catalina.core.StandardService.startInternal 서비스 [Catalina]을(를) 시작합니다.
+21-Jan-2022 22:48:53.716 정보 [main] org.apache.catalina.core.StandardEngine.startInternal 서버 엔진을 시작합니다: [Apache Tomcat/9.0.58]
+21-Jan-2022 22:48:53.855 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/docs]을(를) 배치합니다.
+21-Jan-2022 22:48:53.867 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/docs]에 대한 배치가 [11] 밀리초에 완료되었습니다.
+21-Jan-2022 22:48:53.867 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/manager]을(를) 배치합니다.
+21-Jan-2022 22:48:53.888 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/manager]에 대한 배치가 [20] 밀리초에 완료되었습니다.
+21-Jan-2022 22:48:53.888 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/examples]을(를) 배치합니다.
+21-Jan-2022 22:48:54.030 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/examples]에 대한 배치가 [142] 밀리초에 완료되었습니다.
+21-Jan-2022 22:48:54.030 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/webShop]을(를) 배치합니다.
+21-Jan-2022 22:48:54.040 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/webShop]에 대한 배치가 [10] 밀리초에 완료되었습니다.
+21-Jan-2022 22:48:54.040 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/ROOT]을(를) 배치합니다.
+21-Jan-2022 22:48:54.048 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/ROOT]에 대한 배치가 [8] 밀리초에 완료되었습니다.
+21-Jan-2022 22:48:54.049 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/host-manager]을(를) 배치합니다.
+21-Jan-2022 22:48:54.060 정보 [main] org.apache.catalina.startup.HostConfig.deployDirectory 웹 애플리케이션 디렉토리 [/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/apache-tomcat-9.0.58/webapps/host-manager]에 대한 배치가 [12] 밀리초에 완료되었습니다.
+21-Jan-2022 22:48:54.062 정보 [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-8080"]을(를) 시작합니다.
+21-Jan-2022 22:48:54.070 정보 [main] org.apache.catalina.startup.Catalina.start 서버가 [369] 밀리초 내에 시작되었습니다.
+21-Jan-2022 22:49:17.643 정보 [main] org.apache.catalina.core.StandardServer.await 셧다운 포트를 통해 유효한 셧다운 명령을 받았습니다. 서버 인스턴스를 중지시킵니다.
+21-Jan-2022 22:49:17.643 정보 [main] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-8080"]을(를) 일시 정지 중
+21-Jan-2022 22:49:17.647 정보 [main] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+21-Jan-2022 22:49:17.664 정보 [main] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-8080"]을(를) 중지시킵니다.
+21-Jan-2022 22:49:17.671 정보 [main] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-8080"]을(를) 소멸시킵니다.
