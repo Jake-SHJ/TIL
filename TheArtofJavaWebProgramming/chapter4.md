@@ -8,7 +8,6 @@
 
 ## 컨테이너에서 웹 애플리케이션 실행하기
 
-> tomcat 디렉토리 > webapps/webShop 파일 내용 확인
 > tomcat 실행 방법은 https://eunoia3jy.tistory.com/31 참조 / 윈도우와 달라서 따로 찾아봐야 함
 
 ### 컨텍스트
