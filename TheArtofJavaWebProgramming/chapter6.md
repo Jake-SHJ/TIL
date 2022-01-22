@@ -25,3 +25,23 @@
 
 - [LoginServlet2](chapter6/pro6/src/sec02/ex01/LoginServlet2.java)
 - [CalcServlet](chapter6/pro6/src/sec02/ex01/CalcServlet.java)
+
+## 웹 브라우저에서 서블릿으로 데이터 전송하기
+
+- GET : URL 주소에 데이터를 파라미터로 붙여서 전송하는 방식, 보안 취약 (앞서 한 예제 서블릿은 전부 get 구현)
+- POST : 데이터를 숨겨서 전송
+
+- [LoginServlet3](chapter6/pro6/src/sec03/ex01/LoginServlet3.java)
+
+## GET 방식과 POST 방식 요청 동시에 처리하기
+
+- [LoginServlet4](chapter6/pro6/src/sec03/ex02/LoginServlet4.java)
+
+## 자바스크립트로 서블릿에 요청하기
+
+- 보통은 자바스크립트로 유효성 검사를 한 후 서블릿으로 요청함
+- 값 유무 판단 후, submit 로직 js 구현 > 서블릿 doPost로 받아서 처리, html 반환(js만 추가된 예제라 스킵)
+
+## 실습 예제 (스킵)
+
+- 코드로 html 좀 그만 그려..
