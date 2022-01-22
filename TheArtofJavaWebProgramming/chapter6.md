@@ -12,8 +12,8 @@
 
 ## 서블릿에서 클라이언트의 요청을 얻는 방법
 
-- [InputServlet](chapter6/pro6/src/sec01/ex01/inputServlet.java)
-- [InputServlet2](chapter6/pro6/src/sec01/ex01/inputServlet2.java)
+- [InputServlet](chapter6/pro6/src/sec01/ex01/InputServlet.java)
+- [InputServlet2](chapter6/pro6/src/sec01/ex01/InputServlet2.java)
 - [LoginServlet](chapter6/pro6/src/sec01/ex01/LoginServlet.java)
 
 ## 서블릿의 응답 처리 방법
