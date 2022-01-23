@@ -17,6 +17,6 @@
 - ArrayList를 다시 메서드를 호출한 MemberServlet으로 반환 후 ArrayList의 MemberVO를 차례대로 가져와 회원 정보를 HTML 태그의 문자열로 생성
 - 만들어진 HTML 태그를 웹 브라우저로 전송해서 회원 정보를 출력
 
-- [MemberServlet](chapter7/pro7/src/sec01/ex01/MemberServlet.java)
-- [MemberDAO](chapter7/pro7/src/sec01/ex01/MemberDAO.java)
-- [MemberVO](chapter7/pro7/src/sec01/ex01/MemberVO.java)
+- [MemberServlet](chapter7/pro07/src/sec01/ex01/MemberServlet.java)
+- [MemberDAO](chapter7/pro07/src/sec01/ex01/MemberDAO.java)
+- [MemberVO](chapter7/pro07/src/sec01/ex01/MemberVO.java)
