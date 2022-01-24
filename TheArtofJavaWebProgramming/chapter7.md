@@ -41,7 +41,7 @@
 - JNDI(Java Naming and Directory Interface): 톰캣이 생성한 ConnectionPool 객체에 접근할 때 이용
 - 필요한 자원을 키/값 쌍으로 저장한 후 필요할 때 키를 이용해 값을 얻는 방법
 
-[DataSource를 이용한 MemberDAO](chapter7/pro07/src/sec02/ex01/MemberDAO.java)
+- [DataSource를 이용한 MemberDAO](chapter7/pro07/src/sec02/ex01/MemberDAO.java)
 
 ## DataSource 이용해 회원 정보 등록하기
 
@@ -53,5 +53,5 @@
 - html에서 삭제 버튼을 누르면 Servlet에 href의 파라미터로 "?command=delMember&id={userId}" 전달
 - DAO에서 delete 쿼리 생성
 
-[정보 등록 및 삭제 MemberServlet](chapter7/pro07/src/sec02/ex02/MemberServlet.java)
-[정보 등록 및 삭제 MemberDAO](chapter7/pro07/src/sec02/ex02/MemberDAO.java)
+- [정보 등록 및 삭제 MemberServlet](chapter7/pro07/src/sec02/ex02/MemberServlet.java)
+- [정보 등록 및 삭제 MemberDAO](chapter7/pro07/src/sec02/ex02/MemberDAO.java)
