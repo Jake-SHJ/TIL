@@ -15,30 +15,30 @@
   - HttpServletResponse 객체의 sendRedirect() 메서드 이용
   - 웹 브라우저에 재요청하는 방식
   - 형식: sendRedirect("포워드할 서블릿 또는 JSP")
-  - [Redirect 방법](chapter8/pro08/src/sec01/ex01/FitstServlet.java)
+  - [Redirect 방법](chapter8/pro08/src/sec01/ex01/FirstServlet.java)
 - Refresh 방법
   - HttpServletResponse 객체의 addHeader() 메서드 이용
   - 웹 브라우저에 재요청하는 방식
   - 형식: response.addHeader("Refresh", "경과시간(초); url=요청할 서블릿 또는 JSP);
-  - [Refresh 방법](chapter8/pro08/src/sec01/ex02/FitstServlet.java)
+  - [Refresh 방법](chapter8/pro08/src/sec01/ex02/FirstServlet.java)
 - Location 방법
   - JS Location 객체의 href 속성을 이용
   - JS에서 재요청하는 방식
   - 형식: location.href="요청할 서블릿 또는 JSP"
-  - [Location 방법](chapter8/pro08/src/sec01/ex03/FitstServlet.java)
+  - [Location 방법](chapter8/pro08/src/sec01/ex03/FirstServlet.java)
 - Dispatch 방법
   - 일반적으로 포워딩 기능을 지칭
   - 서블릿이 직접 요청하는 방법
   - RequestDispatcher 클래스의 forward() 메서드를 이용
   - 형식: RequestDispatcher dis = request.getRequestDispatcher("포워드할 서블릿 또는 JSP"); dis.forward(request, response);
-  - [Dispatch 방법](chapter8/pro08/src/sec03/ex01/FitstServlet.java)
+  - [Dispatch 방법](chapter8/pro08/src/sec03/ex01/FirstServlet.java)
 
 ## 바인딩
 
 - 서블릿에서 다른 서블릿 또는 JSP로 대량의 데이터를 공유하거나 전달하고 싶을 때 사용
 - 웹 프로그램 실행 시 자원을 서블릿 관련 객체에 저장, 저장된 자원은 서블릿이나 JSP에서 공유하여 사용
 - Redirect 방법은 웹 브라우저를 거치기 때문에 바인딩을 사용할 수 없음
-- [Dispatch를 이용한 바인딩](chapter8/pro08/src/sec04/ex02/FitstServlet.java)
+- [Dispatch를 이용한 바인딩](chapter8/pro08/src/sec04/ex02/FirstServlet.java)
 
 ## ServletContext와 ServletConfig 사용법
 
