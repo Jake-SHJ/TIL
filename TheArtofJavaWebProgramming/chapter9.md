@@ -35,5 +35,5 @@
   - HttpServletRequest의 getCookie() 메서드를 이용해 쿠키를 서버로 가져옴
 - 서블릿에서 쿠키 사용하기
   - 세션 쿠키는 setCookie에서 c.setMaxAge(-1)로 설정
-  - [setCookie](chapter9/pro09/src/sec02/ex01/setCookie.java)
-  - [getCookie](chapter9/pro09/src/sec02/ex01/getCookie.java)
+  - [setCookie](chapter9/pro09/src/sec02/ex01/SetCookieValue.java)
+  - [getCookie](chapter9/pro09/src/sec02/ex01/GetCookieValue.java)
