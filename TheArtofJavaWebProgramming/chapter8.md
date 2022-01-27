@@ -43,41 +43,32 @@
 ## ServletContext와 ServletConfig 사용법
 
 - ServletContext 클래스의 특징
-
   - javax.servlet.ServletContext로 정의
   - 서블릿과 컨테이너 간의 연동을 위해 사용
   - 컨텍스트(웹 애플리케이션)마다 하나의 ServletContext가 생성
   - 서블릿끼리 자원을 공유하는 데 사용
   - 컨테이너 실행 시 생성되고 컨테이너 종료 시 소멸
-
 - ServletContext가 제공하는 기능
-
   - 서블릿에서 파일 접근 기능
   - 자원 바인딩 기능
   - 로그 파일 기능
   - 컨텍스트에서 제공하는 설정 정보 제공 기능
-
 - [ServletContext 바인딩 기능(SetServletContext)](chapter8/pro08/src/sec05/ex01/SetServletContext.java)
 - [ServletContext 바인딩 기능(GetServletContext)](chapter8/pro08/src/sec05/ex01/GetServletContext.java)
 - [ServletContext 매개변수 설정 기능](chapter8/pro08/src/sec05/ex02/ContextParamServlet.java)
 - [ServletContext 파일 입출력 기능](chapter8/pro08/src/sec05/ex03/ContextFileServlet.java)
 
 - ServletConfig는 각 Servlet 객체에 대해 생성, ServletConfig 인터페이스를 GenericServlet 클래스가 구현
-
 - ServletConfig가 제공하는 기능
-
   - ServletContext 객체를 얻는 기능
   - 서블릿에 대한 초기화 작업 기능
-
 - [@WebServlet 애너테이션을 활용한 기능](chapter8/pro08/src/sec06/ex01/InitParamServlet.java)
 
 ## load-on-startup 기능 사용하기
 
 - 서블릿은 최초 요청 시 init() 메서드를 실행한 후 메모리에 로드되어 기능을 수행하므로, 최초 요청에 대한 실행 시간이 길어질 수 밖에 없음
 - load-on-startup의 특징
-
   - 톰캣 컨테이너가 실행되면서 미리 서블릿을 실행
   - 지정된 숫자가 0보다 크면 톰캣 컨테이너가 실행되면서 서블릿이 초기화
   - 지정한 숫자는 우선순위를 의미하며 작은 숫자부터 먼저 초기화
-
 - [애너테이션을 이용한 방법](chapter8/pro08/src/sec06/ex02/LoadAppConfig.java)
