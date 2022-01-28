@@ -66,5 +66,3 @@
 - 브라우저에서 쿠키 기능을 사용할 수 없게 설정했다면 쿠키 기능은 물론 세션 기능도 사용할 수 없음
 - encodeURL() 메서드를 이용해 직접 서버에서 브라우저로 응답을 먼저 보낸 후 URL Rewriting 방법을 이용해 jsessionId를 서버로 전송하여 세션 기능을 사용
 - [encodeURL() 메서드를 이용한 세션 사용](chapter9/pro09/src/sec04/ex01/SessionTest5.java)
-
-## 세션을 이용한 로그인 예제
