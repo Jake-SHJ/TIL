@@ -34,6 +34,37 @@
   - HttpServletResponse의 addCookie() 메서드를 이용해 클라이언트 브라우저에 쿠키를 전송한 후 저장
   - HttpServletRequest의 getCookie() 메서드를 이용해 쿠키를 서버로 가져옴
 - 서블릿에서 쿠키 사용하기
+
   - 세션 쿠키는 setCookie에서 c.setMaxAge(-1)로 설정
   - [setCookie](chapter9/pro09/src/sec02/ex01/SetCookieValue.java)
   - [getCookie](chapter9/pro09/src/sec02/ex01/GetCookieValue.java)
+
+## 세션을 이용한 웹 페이지 연동 기능
+
+- 세션의 특징
+  - 정보가 서버의 메모리에 저장
+  - 브라우저의 세션 연동은 세션 쿠키를 이용
+  - 쿠키보다 보안에 유리
+  - 서버에 부하를 줄 수 있음
+  - 브라우저(사용자)당 한 개의 세션(세션 id)이 생성
+  - 세션은 유효 시간을 가짐(기본 30분)
+  - 로그인 상태 유지 기능이나 쇼핑몰의 장바구니 담기 기능 등에 주로 사용
+- 세션 기능 실행 과정
+  - 브라우저로 사이트에 접속
+  - 서버는 접속한 브라우저에 대한 세션 객체를 생성
+  - 서버는 생성된 세션 id를 클라이언트 브라우저에 응답
+  - 브라우저는 서버로부터 받은 세션 id를 브라우저가 사용하는 메모리의 세션 쿠키에 저장(쿠키 이름은 jsessionId)
+  - 브라우저가 재접속하면 브라우저는 세션 쿠키에 저장된 세션 id를 서버에 전달
+  - 서버는 전송된 세션 id를 이용해 해당 세션에 접근하여 작업을 수행
+- [서블릿에서 세션 API 이용하기](chapter9/pro09/src/sec03/ex01/SessionTest.java)
+- [세션 유효 시간 설정하기](chapter9/pro09/src/sec03/ex02/SessionTest2.java)
+- [강제로 세션 삭제하기](chapter9/pro09/src/sec03/ex03/SessionTest3.java)
+- [세션을 이용한 로그인 정보 바인딩](chapter9/pro09/src/sec03/ex04/SessionTest4.java)
+
+## encodeURL() 사용법
+
+- 브라우저에서 쿠키 기능을 사용할 수 없게 설정했다면 쿠키 기능은 물론 세션 기능도 사용할 수 없음
+- encodeURL() 메서드를 이용해 직접 서버에서 브라우저로 응답을 먼저 보낸 후 URL Rewriting 방법을 이용해 jsessionId를 서버로 전송하여 세션 기능을 사용
+- [encodeURL() 메서드를 이용한 세션 사용](chapter9/pro09/src/sec04/ex01/SessionTest5.java)
+
+## 세션을 이용한 로그인 예제
