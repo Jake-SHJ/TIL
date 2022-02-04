@@ -33,3 +33,7 @@
   - [Model](chapter17/pro17/src/sec01/ex01/MemberDAO.java)
   - [View](chapter17/pro17/web/test01/listMembers.jsp)
   - [Controller](chapter17/pro17/src/sec01/ex01/MemberController.java)
+- 회원 정보 추가 기능 구현
+  - [Model](chapter17/pro17/src/sec02/ex01/MemberDAO.java)
+  - [View](chapter17/pro17/web/test02/memberForm.jsp)
+  - [Controller](chapter17/pro17/src/sec02/ex01/MemberController.java)
