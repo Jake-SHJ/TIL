@@ -37,3 +37,7 @@
   - [Model](chapter17/pro17/src/sec02/ex01/MemberDAO.java)
   - [View](chapter17/pro17/web/test02/memberForm.jsp)
   - [Controller](chapter17/pro17/src/sec02/ex01/MemberController.java)
+- 회원 정보 수정 및 삭제 기능 구현
+  - [Model](chapter17/pro17/src/sec02/ex02/MemberDAO.java)
+  - [View](chapter17/pro17/web/test03/modMemberForm.jsp)
+  - [Controller](chapter17/pro17/src/sec02/ex02/MemberController.java)
