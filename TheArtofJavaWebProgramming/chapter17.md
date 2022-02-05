@@ -41,3 +41,12 @@
   - [Model](chapter17/pro17/src/sec02/ex02/MemberDAO.java)
   - [View](chapter17/pro17/web/test03/modMemberForm.jsp)
   - [Controller](chapter17/pro17/src/sec02/ex02/MemberController.java)
+
+## 모델2로 답변형 게시판 구현하기
+
+- DAO는 데이터베이스에 접근하는 기능을 수행, Service는 트랜잭션(transaction, 실제 사용자 입장에서의 업무 단위)으로 작업을 수행
+- 게시판 글 목록 보기 구현
+  - [Model](chapter17/pro17/src/sec03/brd01/BoardDAO.java)
+  - [View](chapter17/pro17/web/board01/listArticles.jsp)
+  - [Controller](chapter17/pro17/src/sec03/brd01/BoardController.java)
+  - [Service](chapter17/pro17/src/sec03/brd01/BoardService.java)
