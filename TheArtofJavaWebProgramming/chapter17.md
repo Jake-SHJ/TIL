@@ -55,3 +55,7 @@
   - [View](chapter17/pro17/web/board02/articleForm.jsp)
   - [Controller](chapter17/pro17/src/sec03/brd02/BoardController.java)
   - [Service](chapter17/pro17/src/sec03/brd02/BoardService.java)
+- 게시글별 이미지 파일 분기
+  - [Model](chapter17/pro17/src/sec03/brd03/BoardDAO.java)
+  - [Controller](chapter17/pro17/src/sec03/brd03/BoardController.java)
+  - [Service](chapter17/pro17/src/sec03/brd03/BoardService.java)
