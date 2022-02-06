@@ -50,3 +50,8 @@
   - [View](chapter17/pro17/web/board01/listArticles.jsp)
   - [Controller](chapter17/pro17/src/sec03/brd01/BoardController.java)
   - [Service](chapter17/pro17/src/sec03/brd01/BoardService.java)
+- 게시판 글쓰기 구현
+  - [Model](chapter17/pro17/src/sec03/brd02/BoardDAO.java)
+  - [View](chapter17/pro17/web/board02/articleForm.jsp)
+  - [Controller](chapter17/pro17/src/sec03/brd02/BoardController.java)
+  - [Service](chapter17/pro17/src/sec03/brd02/BoardService.java)
