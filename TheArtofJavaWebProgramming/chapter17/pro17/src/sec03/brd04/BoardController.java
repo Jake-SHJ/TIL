@@ -1,4 +1,4 @@
-package sec03.brd03;
+package sec03.brd04;
 
 import java.io.File;
 import java.io.IOException;
@@ -18,7 +18,7 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.commons.io.FileUtils;
 
-//@WebServlet("/board/*")
+@WebServlet("/board/*")
 public class BoardController extends HttpServlet {
 
     private static String ARTICLE_IMAGE_REPO = "/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/board/articleImage";
@@ -53,13 +53,13 @@ public class BoardController extends HttpServlet {
             if (action == null) {
                 articlesList = boardService.listArticles();
                 request.setAttribute("articlesList", articlesList);
-                nextPage = "/board02/listArticles.jsp";
+                nextPage = "/board03/listArticles.jsp";
             } else if (action.equals("/listArticles.do")) {
                 articlesList = boardService.listArticles();
                 request.setAttribute("articlesList", articlesList);
-                nextPage = "/board02/listArticles.jsp";
+                nextPage = "/board03/listArticles.jsp";
             } else if (action.equals("/articleForm.do")) {
-                nextPage = "/board02/articleForm.jsp";
+                nextPage = "/board03/articleForm.jsp";
             } else if (action.equals("/addArticle.do")) {
                 int articleNO = 0;
                 Map<String, String> articleMap = upload(request, response);
@@ -87,8 +87,13 @@ public class BoardController extends HttpServlet {
                 pw.print("<script>" + "alert('새글을 추가했습니다.');" + " location.href='"
                     + request.getContextPath() + "/board/listArticles.do';" + "</script>");
                 return;
+            } else if (action.equals("/viewArticle.do")) {
+                String articleNO = request.getParameter("articleNO");
+                articleVO = boardService.viewArticle(Integer.parseInt(articleNO));
+                request.setAttribute("article", articleVO);
+                nextPage = "/board03/viewArticle.jsp";
             } else {
-                nextPage = "/board02/listArticles.jsp";
+                nextPage = "/board03/listArticles.jsp";
             }
 
             RequestDispatcher dispatch = request.getRequestDispatcher(nextPage);

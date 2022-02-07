@@ -59,3 +59,8 @@
   - [Model](chapter17/pro17/src/sec03/brd03/BoardDAO.java)
   - [Controller](chapter17/pro17/src/sec03/brd03/BoardController.java)
   - [Service](chapter17/pro17/src/sec03/brd03/BoardService.java)
+- 게시글 상세 구현
+  - [Model](chapter17/pro17/src/sec03/brd04/BoardDAO.java)
+  - [View](chapter17/pro17/web/board03/viewArticle.jsp)
+  - [Controller](chapter17/pro17/src/sec03/brd04/BoardController.java)
+  - [Service](chapter17/pro17/src/sec03/brd04/BoardService.java)
