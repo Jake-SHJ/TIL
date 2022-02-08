@@ -69,3 +69,8 @@
   - [View](chapter17/pro17/web/board04/viewArticle.jsp)
   - [Controller](chapter17/pro17/src/sec03/brd05/BoardController.java)
   - [Service](chapter17/pro17/src/sec03/brd05/BoardService.java)
+- 게시글 삭제 구현
+  - [Model](chapter17/pro17/src/sec03/brd06/BoardDAO.java)
+  - [View](chapter17/pro17/web/board05/viewArticle.jsp)
+  - [Controller](chapter17/pro17/src/sec03/brd06/BoardController.java)
+  - [Service](chapter17/pro17/src/sec03/brd06/BoardService.java)

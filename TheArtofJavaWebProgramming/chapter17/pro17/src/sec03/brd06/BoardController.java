@@ -1,4 +1,4 @@
-package sec03.brd05;
+package sec03.brd06;
 
 import java.io.File;
 import java.io.IOException;
@@ -18,7 +18,7 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.commons.io.FileUtils;
 
-//@WebServlet("/board/*")
+@WebServlet("/board/*")
 public class BoardController extends HttpServlet {
 
     private static String ARTICLE_IMAGE_REPO = "/Users/shj/Documents/TIL/TheArtofJavaWebProgramming/board/articleImage";
@@ -53,13 +53,13 @@ public class BoardController extends HttpServlet {
             if (action == null) {
                 articlesList = boardService.listArticles();
                 request.setAttribute("articlesList", articlesList);
-                nextPage = "/board04/listArticles.jsp";
+                nextPage = "/board05/listArticles.jsp";
             } else if (action.equals("/listArticles.do")) {
                 articlesList = boardService.listArticles();
                 request.setAttribute("articlesList", articlesList);
-                nextPage = "/board04/listArticles.jsp";
+                nextPage = "/board05/listArticles.jsp";
             } else if (action.equals("/articleForm.do")) {
-                nextPage = "/board04/articleForm.jsp";
+                nextPage = "/board05/articleForm.jsp";
             } else if (action.equals("/addArticle.do")) {
                 int articleNO = 0;
                 Map<String, String> articleMap = upload(request, response);
@@ -91,7 +91,7 @@ public class BoardController extends HttpServlet {
                 String articleNO = request.getParameter("articleNO");
                 articleVO = boardService.viewArticle(Integer.parseInt(articleNO));
                 request.setAttribute("article", articleVO);
-                nextPage = "/board04/viewArticle.jsp";
+                nextPage = "/board05/viewArticle.jsp";
             } else if (action.equals("/modArticle.do")) {
                 Map<String, String> articleMap = upload(request, response);
                 int articleNO = Integer.parseInt(articleMap.get("articleNO"));
@@ -121,8 +121,23 @@ public class BoardController extends HttpServlet {
                     + request.getContextPath() + "/board/viewArticle.do?articleNO=" + articleNO
                     + "';" + "</script>");
                 return;
+            } else if (action.equals("/removeArticle.do")) {
+                int articleNO = Integer.parseInt(request.getParameter("articleNO"));
+                List<Integer> articleNOList = boardService.removeArticle(articleNO);
+
+                for (int _articleNO : articleNOList) {
+                    File imgDir = new File(ARTICLE_IMAGE_REPO + "/" + _articleNO);
+                    if (imgDir.exists()) {
+                        FileUtils.deleteDirectory(imgDir);
+                    }
+                }
+
+                PrintWriter pw = response.getWriter();
+                pw.print("<script>" + " alert('글을 삭제했습니다.');" + " location.href='"
+                    + request.getContextPath() + "/board/listArticles.do';" + "</script>");
+                return;
             } else {
-                nextPage = "/board04/listArticles.jsp";
+                nextPage = "/board05/listArticles.jsp";
             }
 
             RequestDispatcher dispatch = request.getRequestDispatcher(nextPage);
