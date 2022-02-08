@@ -74,3 +74,7 @@
   - [View](chapter17/pro17/web/board05/viewArticle.jsp)
   - [Controller](chapter17/pro17/src/sec03/brd06/BoardController.java)
   - [Service](chapter17/pro17/src/sec03/brd06/BoardService.java)
+- 답글 쓰기 구현
+  - [View](chapter17/pro17/web/board06/replyForm.jsp)
+  - [Controller](chapter17/pro17/src/sec03/brd07/BoardController.java)
+  - [Service](chapter17/pro17/src/sec03/brd07/BoardService.java)
