@@ -78,3 +78,8 @@
   - [View](chapter17/pro17/web/board06/replyForm.jsp)
   - [Controller](chapter17/pro17/src/sec03/brd07/BoardController.java)
   - [Service](chapter17/pro17/src/sec03/brd07/BoardService.java)
+- 게시판 페이징 구현
+  - [Model](chapter17/pro17/src/sec03/brd08/BoardDAO.java)
+  - [View](chapter17/pro17/web/board07/listArticles.jsp)
+  - [Controller](chapter17/pro17/src/sec03/brd08/BoardController.java)
+  - [Service](chapter17/pro17/src/sec03/brd08/BoardService.java)
