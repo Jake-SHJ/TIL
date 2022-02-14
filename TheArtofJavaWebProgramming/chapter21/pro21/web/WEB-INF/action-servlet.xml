@@ -21,37 +21,37 @@
     </property>
   </bean>
 
-<!--  <bean id="viewResolver"-->
-<!--    class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
-<!--    <property name="viewClass"-->
-<!--      value="org.springframework.web.servlet.view.JstlView" />-->
-<!--    <property name="prefix" value="/test/" />-->
-<!--    <property name="suffix" value=".jsp" />-->
-<!--  </bean>-->
+  <bean id="viewResolver"
+    class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <property name="viewClass"
+      value="org.springframework.web.servlet.view.JstlView" />
+    <property name="prefix" value="/test/" />
+    <property name="suffix" value=".jsp" />
+  </bean>
 
-<!--  <bean id="userUrlMapping"-->
-<!--    class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">-->
-<!--    <property name="mappings">-->
-<!--      <props>-->
-<!--        <prop key="/test/*.do">userController</prop>-->
-<!--      </props>-->
-<!--    </property>-->
-<!--  </bean>-->
+  <bean id="userUrlMapping"
+    class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+    <property name="mappings">
+      <props>
+        <prop key="/test/*.do">userController</prop>
+      </props>
+    </property>
+  </bean>
 
-<!--  <bean id="userController" class="com.spring.ex02.UserController">-->
-<!--    <property name="methodNameResolver">-->
-<!--      <ref local="userMethodNameResolver" />-->
-<!--    </property>-->
-<!--  </bean>-->
+  <bean id="userController" class="com.spring.ex02.UserController">
+    <property name="methodNameResolver">
+      <ref local="userMethodNameResolver" />
+    </property>
+  </bean>
 
-<!--  <bean id="userMethodNameResolver"-->
-<!--    class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">-->
-<!--    <property name="mappings">-->
-<!--      <props>-->
-<!--        <prop key="/test/login.do">login</prop>-->
-<!--        <prop key="/test/memberInfo.do">memberInfo</prop>-->
-<!--      </props>-->
-<!--    </property>-->
-<!--  </bean>-->
+  <bean id="userMethodNameResolver"
+    class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+    <property name="mappings">
+      <props>
+        <prop key="/test/login.do">login</prop>
+        <prop key="/test/memberInfo.do">memberInfo</prop>
+      </props>
+    </property>
+  </bean>
 
 </beans>

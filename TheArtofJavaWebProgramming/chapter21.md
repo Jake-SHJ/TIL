@@ -28,3 +28,7 @@
 
 - lib에 라이브러리 파일이 들어있어야 동작함
 - [실습 파일](chapter21/pro21/src/com/spring/ex01/SimpleUrlController.java)
+
+## MultiActionController 이용해 스프링 MVC 실습하기
+
+- [실습 파일](chapter21/pro21/src/com/spring/ex02/UserController.java)
