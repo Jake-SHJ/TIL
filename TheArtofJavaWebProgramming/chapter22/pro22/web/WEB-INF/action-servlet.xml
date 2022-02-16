@@ -13,11 +13,14 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
 
   <bean id="viewResolver"
-    class="org.springframework.web.servlet.view.InternalResourceViewResolver" >
-    <property  name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
-    <property  name="prefix" value="/WEB-INF/views/" />
-    <property  name="suffix" value=".jsp" />
+    class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+    <property name="prefix" value="/WEB-INF/views/"/>
+    <property name="suffix" value=".jsp"/>
   </bean>
+
+  <bean id="memberService" class="com.spring.member.service.MemberServiceImpl"/>
+
   <bean id="memberController"
     class="com.spring.member.controller.MemberControllerImpl">
     <property name="methodNameResolver">
@@ -26,13 +29,13 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
     <property name="memberService" ref="memberService"/>
   </bean>
 
-  <bean  id="methodResolver"
-    class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver" >
-    <property  name="mappings" >
+  <bean id="methodResolver"
+    class="org.springframework.web.servlet.mvc.multiaction.PropertiesMethodNameResolver">
+    <property name="mappings">
       <props>
-        <prop key="/member/listMembers.do" >listMembers</prop>
-        <prop key="/member/addMember.do" >addMember</prop>
-        <prop key="/member/memberForm.do" >memberForm</prop>
+        <prop key="/member/listMembers.do">listMembers</prop>
+        <prop key="/member/addMember.do">addMember</prop>
+        <prop key="/member/memberForm.do">memberForm</prop>
         <prop key="/member/memberDetail.do">memberDetail</prop>
       </props>
     </property>

@@ -7,7 +7,8 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.multiaction.MultiActionController;
 
-public class MemberControllerImpl extends MultiActionController implements MemberController{
+public class MemberControllerImpl extends MultiActionController implements MemberController {
+
     private MemberService memberService;
 
     public void setMemberService(MemberService memberService) {
