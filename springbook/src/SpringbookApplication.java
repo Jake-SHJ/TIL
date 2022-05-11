@@ -8,7 +8,7 @@ public class SpringbookApplication {
         UserDao dao = new UserDao();
 
         User user = new User();
-        user.setId("test2");
+        user.setId("test");
         user.setName("jake");
         user.setPassword("test");
 
