@@ -1,15 +1,12 @@
 import java.sql.SQLException;
-import user.dao.ConnectionMaker;
-import user.dao.DConnectionMaker;
+import user.dao.DaoFactory;
 import user.dao.UserDao;
 import user.domain.User;
 
 public class UserDaoTest {
 
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
-        ConnectionMaker connectionMaker = new DConnectionMaker();
-
-        UserDao dao = new UserDao(connectionMaker);
+        UserDao dao = new DaoFactory().userDao();
 
         User user = new User();
         user.setId("test");
