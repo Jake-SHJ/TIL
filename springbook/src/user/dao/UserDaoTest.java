@@ -1,13 +1,18 @@
+package user.dao;
+
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
 import java.sql.SQLException;
+import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import user.dao.DaoFactory;
-import user.dao.UserDao;
 import user.domain.User;
 
 public class UserDaoTest {
 
-    public static void main(String[] args) throws ClassNotFoundException, SQLException {
+    @Test
+    public void addAndGet() throws ClassNotFoundException, SQLException {
         ApplicationContext context = new AnnotationConfigApplicationContext(DaoFactory.class);
         UserDao dao = context.getBean("userDao", UserDao.class);
 
@@ -18,12 +23,9 @@ public class UserDaoTest {
 
         dao.add(user);
 
-        System.out.println(user.getId() + " 등록 성공");
-
         User user2 = dao.get(user.getId());
-        System.out.println(user2.getName());
-        System.out.println(user2.getPassword());
 
-        System.out.println(user2.getId() + " 조회 성공");
+        assertThat(user2.getName(), is(user.getName()));
+        assertThat(user2.getPassword(), is(user.getPassword()));
     }
 }
