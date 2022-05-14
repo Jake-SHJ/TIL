@@ -25,6 +25,7 @@ public class UserDao {
         ps.executeUpdate();
         ps.close();
         c.close();
+
     }
 
     public User get(String id) throws ClassNotFoundException, SQLException {
