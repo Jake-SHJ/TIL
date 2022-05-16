@@ -4,6 +4,7 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 import java.sql.SQLException;
+import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -12,12 +13,22 @@ import user.domain.User;
 
 public class UserDaoTest {
 
+    private UserDao dao;
+    private User user1;
+    private User user2;
+    private User user3;
+
+    @Before
+    public void setUp() {
+        ApplicationContext context = new AnnotationConfigApplicationContext(DaoFactory.class);
+        this.dao = context.getBean("userDao", UserDao.class);
+    }
+
     @Test
     public void addAndGet() throws SQLException {
-        ApplicationContext context = new AnnotationConfigApplicationContext(DaoFactory.class);
-        UserDao dao = context.getBean("userDao", UserDao.class);
-        User user1 = new User("jake", "jake", "test");
-        User user2 = new User("tom", "tom", "test");
+
+        this.user1 = new User("jake", "jake", "test");
+        this.user2 = new User("tom", "tom", "test");
 
         dao.deleteAll();
         assertThat(dao.getCount(), is(0));
@@ -37,11 +48,10 @@ public class UserDaoTest {
 
     @Test
     public void count() throws SQLException {
-        ApplicationContext context = new AnnotationConfigApplicationContext(DaoFactory.class);
-        UserDao dao = context.getBean("userDao", UserDao.class);
-        User user1 = new User("jake", "jake", "test");
-        User user2 = new User("tom", "tom", "test");
-        User user3 = new User("vicky", "vicky", "test");
+
+        this.user1 = new User("jake", "jake", "test");
+        this.user2 = new User("tom", "tom", "test");
+        this.user3 = new User("vicky", "vicky", "test");
 
         dao.deleteAll();
         assertThat(dao.getCount(), is(0));
@@ -58,9 +68,7 @@ public class UserDaoTest {
 
     @Test(expected = EmptyResultDataAccessException.class)
     public void getUserFailure() throws SQLException {
-        ApplicationContext context = new AnnotationConfigApplicationContext(DaoFactory.class);
 
-        UserDao dao = context.getBean("userDao", UserDao.class);
         dao.deleteAll();
         assertThat(dao.getCount(), is(0));
 
