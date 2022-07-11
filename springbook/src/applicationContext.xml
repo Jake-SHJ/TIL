@@ -6,11 +6,6 @@
 
   <bean id="userService" class="user.service.UserService">
     <property name="userDao" ref="userDao" />
-    <property name="userLevelUpgradePolicy" ref="userLevelUpgradePolicy" />
-  </bean>
-
-  <bean id="userLevelUpgradePolicy" class="user.service.UserLevelUpgradePolicyImpl">
-    <property name="userDao" ref="userDao" />
   </bean>
 
   <bean id="userDao" class="user.dao.UserDaoJdbc">

@@ -78,4 +78,14 @@ public class UserServiceTest {
         assertThat(userWithLevelRead.getLevel(), is(userWithLevel.getLevel()));
         assertThat(userWithoutLevelRead.getLevel(), is(Level.BASIC));
     }
+
+//    static class TestUserService extends UserService {
+//        private String id;
+//
+//        private TestUserService(String id) {
+//            this.id = id;
+//        }
+//
+//
+//    }
 }
