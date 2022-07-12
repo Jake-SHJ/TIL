@@ -27,16 +27,15 @@ public class UserService {
 //        this.userLevelUpgradePolicy = userLevelUpgradePolicy;
 //    }
 
-    private DataSource dataSource;
+    private PlatformTransactionManager transactionManager;
 
-    public void setDataSource(DataSource dataSource) {
-        this.dataSource = dataSource;
+    public void setTransactionManager(
+        PlatformTransactionManager transactionManager) {
+        this.transactionManager = transactionManager;
     }
 
     public void upgradeLevels() throws Exception {
-        PlatformTransactionManager transactionManager = new DataSourceTransactionManager(
-            dataSource);
-        TransactionStatus status = transactionManager.getTransaction(
+        TransactionStatus status = this.transactionManager.getTransaction(
             new DefaultTransactionDefinition());
 
         try {
@@ -46,9 +45,9 @@ public class UserService {
                     upgradeLevel(user);
                 }
             }
-            transactionManager.commit(status);
+            this.transactionManager.commit(status);
         } catch (Exception e) {
-            transactionManager.rollback(status);
+            this.transactionManager.rollback(status);
             throw e;
         }
     }
