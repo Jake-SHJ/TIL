@@ -3,13 +3,18 @@ package user.service;
 import java.sql.Connection;
 import java.util.List;
 import javax.sql.DataSource;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.jdbc.datasource.DataSourceUtils;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.TransactionStatus;
+import org.springframework.transaction.support.DefaultTransactionDefinition;
 import org.springframework.transaction.support.TransactionSynchronizationManager;
 import user.dao.UserDao;
 import user.domain.Level;
 import user.domain.User;
 
 public class UserService {
+
     public static final int MIN_LOGCOUNT_FOR_SILVER = 50;
     public static final int MIN_RECOMMEND_FOR_GOLD = 30;
     UserDao userDao;
@@ -29,36 +34,36 @@ public class UserService {
     }
 
     public void upgradeLevels() throws Exception {
-        TransactionSynchronizationManager.initSynchronization();
-        Connection c = DataSourceUtils.getConnection(dataSource);
-        c.setAutoCommit(false);
+        PlatformTransactionManager transactionManager = new DataSourceTransactionManager(
+            dataSource);
+        TransactionStatus status = transactionManager.getTransaction(
+            new DefaultTransactionDefinition());
 
         try {
             List<User> users = userDao.getAll();
-            for(User user : users) {
+            for (User user : users) {
                 if (canUpgradeLevel(user)) {
                     upgradeLevel(user);
                 }
             }
-            c.commit();
+            transactionManager.commit(status);
         } catch (Exception e) {
-            c.rollback();
+            transactionManager.rollback(status);
             throw e;
-        } finally {
-            DataSourceUtils.releaseConnection(c, dataSource);
-            TransactionSynchronizationManager.unbindResource(this.dataSource);
-            TransactionSynchronizationManager.clearSynchronization();
         }
-
     }
 
     public boolean canUpgradeLevel(User user) {
         Level currentLevel = user.getLevel();
         switch (currentLevel) {
-            case BASIC: return (user.getLogin() >= MIN_LOGCOUNT_FOR_SILVER);
-            case SILVER: return (user.getRecommend() >= MIN_RECOMMEND_FOR_GOLD);
-            case GOLD: return false;
-            default: throw new IllegalArgumentException("Unknown Level: " + currentLevel);
+            case BASIC:
+                return (user.getLogin() >= MIN_LOGCOUNT_FOR_SILVER);
+            case SILVER:
+                return (user.getRecommend() >= MIN_RECOMMEND_FOR_GOLD);
+            case GOLD:
+                return false;
+            default:
+                throw new IllegalArgumentException("Unknown Level: " + currentLevel);
         }
     }
 
@@ -68,7 +73,9 @@ public class UserService {
     }
 
     public void add(User user) {
-        if (user.getLevel() == null) user.setLevel(Level.BASIC);
+        if (user.getLevel() == null) {
+            user.setLevel(Level.BASIC);
+        }
         userDao.add(user);
     }
 }
