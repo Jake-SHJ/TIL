@@ -1,14 +1,9 @@
 package user.service;
 
-import java.sql.Connection;
 import java.util.List;
-import javax.sql.DataSource;
-import org.springframework.jdbc.datasource.DataSourceTransactionManager;
-import org.springframework.jdbc.datasource.DataSourceUtils;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.DefaultTransactionDefinition;
-import org.springframework.transaction.support.TransactionSynchronizationManager;
 import user.dao.UserDao;
 import user.domain.Level;
 import user.domain.User;
@@ -18,14 +13,10 @@ public class UserService {
     public static final int MIN_LOGCOUNT_FOR_SILVER = 50;
     public static final int MIN_RECOMMEND_FOR_GOLD = 30;
     UserDao userDao;
-//    UserLevelUpgradePolicy userLevelUpgradePolicy;
 
     public void setUserDao(UserDao userDao) {
         this.userDao = userDao;
     }
-//    public void setUserLevelUpgradePolicy(UserLevelUpgradePolicyImpl userLevelUpgradePolicy) {
-//        this.userLevelUpgradePolicy = userLevelUpgradePolicy;
-//    }
 
     private PlatformTransactionManager transactionManager;
 
